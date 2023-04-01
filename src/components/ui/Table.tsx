@@ -80,7 +80,8 @@ const Table: FC<TableProps> = ({ userRequests }) => {
 
   const rows = userRequests.map((request) => ({
     id: request.id,
-    col1: request.path,
+    col1: request.id,
+    col2: request.path,
     col3: `${request.timestamp} ago`,
     col4: `${request.duration} ms`,
     col5: request.status,
